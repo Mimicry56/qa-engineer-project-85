@@ -40,8 +40,8 @@
   prerequisites:
     Открыта страница "Sign Up"
   test-data: |
-    Nickname = Mimicry
-    email = 'почтатест_lka@testteat.com'
+    Nickname = Mimi6780
+    email = 'pochtatest_lka@testteat.com'
     Password = badpass
   steps:
     - Заполнить поле 'Nickname' значеними из тестовых данных
@@ -59,6 +59,8 @@
     Открыта страница 'Sign Up'. Наличие зарегистрированого пользователя с Nickame, который указан в тестовых данных
   test-data: |
     Nickname = Mimicry
+    email = kapranova.i.s@yandex.ru
+    Password = badpass
   steps:
     - Заполнить поле 'Nickname' значеними из тестовых данных
     - Заполнить поле 'Email' значеними из тестовых данных
@@ -74,7 +76,7 @@
   prerequisites:
     Открыта страница "Sign Up". Наличие зарегистрированого пользователя с email, который указан в тестовых данных
   test-data: |
-    Nickname = Mimicry
+    Nickname = alfgen
     Email = fatallica@yandex.ru
     Password = badpass
   steps:
