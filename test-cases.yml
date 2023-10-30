@@ -146,13 +146,13 @@
     - Нажать 'Create battle'
     - Выбрать язык програмирования Node.js
     - Ввести код в поле ввода const _ = require("lodash");
-const R = require("rambda");
+    "const R = require("rambda");
 
-const solution = (width, length) => {
-  return width * length;
-};
+    const solution = (width, length) => {
+      return width * length;
+    };
 
-module.exports = solution;
+    module.exports = solution;"
     - Нажать 'check solution'
   expected-result: |
      Игра завершена победой пользователя
@@ -231,8 +231,9 @@ module.exports = solution;
     - В поле time control выбрать '5 min'
     - В поле Choose task by name or tages выбрать 'random task'
     - Нажать 'Create battle'
+    - Ждать завершения игры по истечении выбранного времени с момента начала игры
   expected-result: |
-    Создана игра с выбранным лимитом времени
+    Создана игра с выбранным лимитом времени. Игра закончена по истечении '5 min'
 
 - summary: |
     Проверка возможности выбора типа задания в игре (13)
@@ -313,13 +314,13 @@ module.exports = solution;
     - В окне пользователя 2 нажать соответсвующую иконку "invated"
     - Нажать 'Accept' на приглашение от пользователя 1
     - Написать код в поле ввода const _ = require("lodash");
-const R = require("rambda");
+    "const R = require("rambda");
 
-const solution = (width, length) => {
-  return width * length;
-};
+    const solution = (width, length) => {
+      return width * length;
+    };
 
-module.exports = solution;
+    module.exports = solution;"
     - Нажать 'check'
   expected-result: |
     В окне браузера пользователя 1 отобразилось сообщение о поражении
@@ -389,7 +390,7 @@ module.exports = solution;
     Невозможно взаимодействовать с терминалом соперника
     
 - summary: |
-    Проверка возможности просматривать историю игры (20)
+    Проверка возможности просматривать историю игры во время игры (20)
   requirement: |
     Пользователь имеет возможность просматривать историю игры
   prerequisites: |
@@ -402,10 +403,11 @@ module.exports = solution;
     - В поле time control выбрать '3 min'
     - В поле Game Type выбрать 'with a bot'
     - Нажать 'Create battle'
+    - Написать "икркеоне" в редакторе
     - Нажать кнопку 'Open History'
     - Нажать на кнопку 'Play' внизу экрана
   expected-result: |
-    Отображается история игра
+    Отображается история игры в соответвии с введенеыми данными в редакторе
 
 - summary: |
     Проверка возможности просматривать повтор игры (21)
@@ -479,7 +481,7 @@ module.exports = solution;
     - Выбрать в выпадающем списке 'Type' значение в соответствии с тестовым значением
     - Заполнить поле 'Description' в соответствии с тестовым значением
     - Убрать галочку с 'Radiobutton' 'Use chat'
-    - Заполнить поле 'Starts at' сегодняшней датой и временем
+    - Заполнить поле 'Starts at' сегодняшней датой и актуальным временем на момент создания турнира
     - Выбрать в выпадающем списке 'Access type' значение в соответствии с тестовым значением
     - Выбрать в выпадающем списке 'Task strategy' значение в соответствии с тестовым значением
     - Выбрать в выпадающем списке 'Task provider' значение в соответствии с тестовым значением
@@ -529,7 +531,7 @@ module.exports = solution;
     - Ввести числовое значение в поле 'Break duration sec' в соответствии с тестовым значением
     - Нажать 'Create'
   expected-result: |
-    Турнир не создан, отображается сообщение о невозможности создать турнир с прошедшей датой
+    Турнир не создан, отображается сообщение о невозможности создать турнир с прошедшей датой и временем
     
 - summary: |
     Неуспешное создание нескольких турниров с одинаковым названием (26)
@@ -566,7 +568,7 @@ module.exports = solution;
     - Выбрать в выпадающем списке 'Default language' значение в соответствии с тестовым значением
     - Ввести числовое значение в поле 'Match timeout sec' в соответствии с тестовым значением
     - Ввести числовое значение в поле 'Break duration sec' в соответствии с тестовым значением
-    - Нажать 'Create''
+    - Нажать 'Create'
     - Перейти во влкадку tournaments https://codebattle.hexlet.io/tournaments
     - Нажать на гиперссылку 'Tournaments info'
     - Заполнить форму 'Create a new tournament' в соответствии с тестовыми данными
