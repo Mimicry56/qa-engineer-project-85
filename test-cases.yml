@@ -146,13 +146,13 @@
     - Нажать 'Create battle'
     - Выбрать язык программирования Node.js
     - Ввести код в поле ввода const _ = require("lodash");
-    "const R = require("rambda");
+      "const R = require("rambda");
 
-    const solution = (width, length) => {
-      return width * length;
-    };
+       const solution = (width, length) => {
+        return width * length;
+        };
 
-    module.exports = solution;"
+       module.exports = solution;"
     - Нажать 'check solution'
   expected-result: |
      Игра завершена победой пользователя
@@ -314,13 +314,13 @@
     - В окне пользователя 2 нажать соответствующую иконку "invated"
     - Нажать 'Accept' на приглашение от пользователя 1
     - Написать код в поле ввода const _ = require("lodash");
-    "const R = require("rambda");
+      "const R = require("rambda");
 
-    const solution = (width, length) => {
-      return width * length;
-    };
+      const solution = (width, length) => {
+        return width * length;
+      };
 
-    module.exports = solution;"
+      module.exports = solution;"
     - Нажать 'check'
   expected-result: |
     В окне браузера пользователя 1 отобразилось сообщение о поражении
