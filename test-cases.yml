@@ -6,11 +6,12 @@
   prerequisites: |
     Открыта страница "Sign In". Аккаунт на Github.com зарегистрирован.
   test-data: |
-    Логин = Mimicry56
-    Пароль = password
+    Логин GitHub = Mimicry56
+    Пароль GitHub = password
   steps:
     - Нажать 'Sign in with Github'
-    - Ввести тестовые данные
+    - Ввести тестовые данные в поле Username or email address
+    - Ввести тестовые данные в поле Password
     - Нажать кнопку "Sign in"
   expected-result: |
     Отображается главная страница сайта, в правом верхнем углу отображается данные пользователя
