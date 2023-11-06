@@ -23,8 +23,8 @@
   prerequisites:
    Открыта страница "Sign Up"
   test-data: |
-    Nickname = Mimicry
-    Email = fatallica@yandex.ru
+    Nickname = Mimicry (всегда требуются новые данные)
+    Email = fatallica@yandex.ru (всегда требуются новые данные)
     Password = badpass
   steps:
     - Заполнить поле 'Nickname' значениями из тестовых данных
