@@ -142,7 +142,7 @@
     - Выбрать в поле level сложность игры '*'
     - В поле Game Type выбрать 'With a bot'
     - В поле time control выбрать '3 min'
-    - В поле Choose task by name or tages выбрать 'random task'
+    - В поле Choose task by name or tages выбрать 'rect_area'
     - Нажать 'Create battle'
     - Выбрать язык программирования Node.js
     - Удалить шаблонный код при его наличии
