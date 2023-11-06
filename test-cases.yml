@@ -145,8 +145,9 @@
     - В поле Choose task by name or tages выбрать 'random task'
     - Нажать 'Create battle'
     - Выбрать язык программирования Node.js
-    - Ввести код в поле ввода const _ = require("lodash");
-      "const R = require("rambda");
+    - Удалить шаблонный код при его наличии
+    - Ввести код в поле ввода "const _ = require("lodash");
+      const R = require("rambda");
 
        const solution = (width, length) => {
         return width * length;
