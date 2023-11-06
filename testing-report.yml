@@ -40,7 +40,7 @@
   status: pass
 
 - summary: |
-   Проверка создания игры с определенным оппонентом (11)
+   Проверка создания игры with other users (11)
   status: pass
 
 - summary: |
